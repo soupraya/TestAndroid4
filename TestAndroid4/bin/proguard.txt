@@ -1,0 +1,22 @@
+# view AndroidManifest.xml #generated:23
+-keep class com.google.android.gcm.GCMBroadcastReceiver { <init>(...); }
+
+# view res/layout/activity_main.xml #generated:12
+# view res/layout/fragment_layout.xml #generated:13
+-keep class com.google.android.gms.common.SignInButton { <init>(...); }
+
+# view AndroidManifest.xml #generated:22
+-keep class com.velan.testandroid4.GCMIntentService { <init>(...); }
+
+# view AndroidManifest.xml #generated:14
+-keep class com.velan.testandroid4.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:34
+-keep class com.velan.testandroid4.RegisterActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:35
+-keep class com.velan.testandroid4.TodoDetailsActivity { <init>(...); }
+
+# view res/layout/activity_single_todo.xml #generated:6
+-keep class com.velan.testandroid4.TodoDetailsInputFragment { <init>(...); }
+
