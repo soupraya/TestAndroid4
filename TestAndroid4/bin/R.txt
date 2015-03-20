@@ -145,10 +145,11 @@ int layout activity_main 0x7f030000
 int layout activity_register 0x7f030001
 int layout activity_single_todo 0x7f030002
 int layout circle_member 0x7f030003
-int layout fragment_layout 0x7f030004
-int layout todo_detail_input_fragment 0x7f030005
-int layout todo_detail_result_fragment 0x7f030006
-int layout todo_item 0x7f030007
+int layout drawer_list_item 0x7f030004
+int layout fragment_layout 0x7f030005
+int layout todo_detail_input_fragment 0x7f030006
+int layout todo_detail_result_fragment 0x7f030007
+int layout todo_item 0x7f030008
 int string accept 0x7f050002
 int string action_settings 0x7f050027
 int string app_name 0x7f050023
