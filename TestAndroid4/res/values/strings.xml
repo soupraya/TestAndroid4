@@ -51,10 +51,13 @@
     <!-- Content Description -->
     <string name="desc_list_item_icon">Item Icon</string>
     
-    <color name="list_item_title">#FFFF00</color>
- 	<color name="counter_text_color">#FFFF00</color>
- 	<color name="list_divider">#FFFF00</color>
- 	<color name="list_background">#FFFF00</color>
- 	<color name="counter_text_bg">#FFFF00</color>
- 	<color name="list_background_pressed">#FFFF00</color>
+    <color name="list_item_title">#fff</color>
+    <color name="list_background">#303030</color>
+    <color name="list_background_pressed">#992416</color>
+    <color name="list_divider">#272727</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+    
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
 </resources>
