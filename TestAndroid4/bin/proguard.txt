@@ -20,9 +20,6 @@
 # view AndroidManifest.xml #generated:34
 -keep class com.velan.testandroid4.RegisterActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:36
--keep class com.velan.testandroid4.TodoDetailsActivity { <init>(...); }
-
 # view res/layout/activity_single_todo.xml #generated:6
 -keep class com.velan.testandroid4.TodoDetailsInputFragment { <init>(...); }
 

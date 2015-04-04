@@ -1,13 +1,13 @@
 {
   "files": [
     {
-      "downloadUrl": "/downloads/todoendpoint/v1/20150302185603/java/1.18.0-rc/velan.com-todoendpoint-v1-20150302185603-java-1.18.0-rc-sources.jar", 
-      "path": "velan.com-todoendpoint-v1-20150302185603-java-1.18.0-rc-sources.jar", 
+      "downloadUrl": "/downloads/todoendpoint/v1/20150401160411/java/1.18.0-rc/velan.com-todoendpoint-v1-20150401160411-java-1.18.0-rc-sources.jar", 
+      "path": "velan.com-todoendpoint-v1-20150401160411-java-1.18.0-rc-sources.jar", 
       "type": "source", 
-      "timestamp": "2015-03-02 18:56"
+      "timestamp": "2015-04-01 16:04"
     }, 
     {
-      "path": "velan.com-todoendpoint-v1-20150302185603-java-1.18.0-rc.jar.properties", 
+      "path": "velan.com-todoendpoint-v1-20150401160411-java-1.18.0-rc.jar.properties", 
       "type": "android.properties"
     }
   ], 
@@ -675,5 +675,5 @@
   "packagePath": "testandroid4", 
   "language_version": "1.18.0-rc", 
   "id": "todoendpoint:v1", 
-  "revision": 20150302185603
+  "revision": 20150401160411
 }
