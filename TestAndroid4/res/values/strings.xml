@@ -33,15 +33,15 @@
     <string name="save_todo">Save</string>
     <string name="update_todo">Update</string>
     <string name="new_todo">New</string>
-    <string name="todo_desc">Todo list</string>
+    <string name="todo_desc">Cost Total: </string>
     
         <!-- Nav Drawer Menu Items -->
     <string-array name="nav_drawer_items">
-        <item >Home</item>
-        <item >Find People</item>
-        <item >Photos</item>
-        <item >Communities</item>
-        <item >Pages</item>
+        <item >Parameters</item>
+        <item >Planning</item>
+        <item >Cost</item>
+        <item >Chargeable Items</item>
+        <item >Financial Indicators</item>
         <item >What\'s Hot</item>
     </string-array>
      

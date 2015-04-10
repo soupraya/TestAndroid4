@@ -5,6 +5,8 @@ import java.io.IOException;
 
 import com.google.api.client.extensions.android.http.AndroidHttp;
 import com.google.api.client.json.jackson2.JacksonFactory;
+import com.velan.testandroid4.taskendpoint.Taskendpoint;
+import com.velan.testandroid4.taskendpoint.model.Task;
 import com.velan.testandroid4.todoendpoint.Todoendpoint;
 import com.velan.testandroid4.todoendpoint.model.Todo;
 
@@ -23,15 +25,14 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class TodoDetailsInputFragment extends Fragment {
+public class CostDetailsInputFragment extends Fragment {
 	protected static Todo currenttodo;
+	protected static Task currenttask;
 	private EditText todo_desc;
 	private EditText todo_long_desc;
 	private EditText todo_a;
 	private EditText todo_b;
-	private EditText task_at;
-	private EditText task_bt;
-	private TextView task_ct;
+	private TextView todo_c;
 	private Button save_todo;
 	Context thiscontext;
 	
@@ -64,9 +65,9 @@ public class TodoDetailsInputFragment extends Fragment {
 	    todo_long_desc = (EditText) view.findViewById(R.id.todo_long_desc);
 	    todo_a = (EditText) view.findViewById(R.id.todo_a);
 	    todo_b = (EditText) view.findViewById(R.id.todo_b);
-	    task_at = (EditText) view.findViewById(R.id.task_at);
-	    task_bt = (EditText) view.findViewById(R.id.task_bt);
-	    task_ct = (TextView) view.findViewById(R.id.task_ct);
+	    //task_at = (EditText) view.findViewById(R.id.task_at);
+	    //task_bt = (EditText) view.findViewById(R.id.task_bt);
+	    todo_c = (TextView) view.findViewById(R.id.todo_c);
 	    save_todo = (Button) view.findViewById(R.id.save_todo);
 	    
 	    if(currenttodo != null)
@@ -75,13 +76,13 @@ public class TodoDetailsInputFragment extends Fragment {
 	    todo_long_desc.setText(currenttodo.getLongDescription());
 	    todo_a.setText(currenttodo.getA().toString());
 	    todo_b.setText(currenttodo.getA().toString());
-	    //task_at.setText(currenttask.getAt().toString());
-	    //task_bt.setText(currenttask.getBt().toString());
+	    todo_c.setText(currenttodo.getC().toString());
 	    }
 	    else
 	    {
 	    	currenttodo = new Todo();
 	    }
+	    
 	    save_todo.setOnClickListener(new OnClickListener(){
 	    		  @Override
 	    		  public void onClick(View v) {
@@ -91,17 +92,26 @@ public class TodoDetailsInputFragment extends Fragment {
 	    			  currenttodo.setA(Double.parseDouble(todo_a.getText().toString()));
 	    			  currenttodo.setB(Double.parseDouble(todo_b.getText().toString()));
 	    			  CalculateC();
-	    			  task_ct.setText(currenttodo.getC().toString());
+	    			  CalculateCT();
+	    			  todo_c.setText(currenttodo.getC().toString());
 	    			  new TodoAsyncUpdate().execute();
+	    			  new TaskAsyncUpdate().execute();
 	    			  }
 	    		  });
 	    return view;
 	    
 	  }
+	  
 		public void CalculateC() {
 			Double C;
 			C = currenttodo.getA()*currenttodo.getB();
 			currenttodo.setC(C);
+		}
+		
+		public void CalculateCT() {
+			Double CT;
+			CT = currenttask.getCt()+currenttodo.getC();
+			currenttask.setCt(CT);
 		}
 		
 	  	//Todo list update
@@ -149,4 +159,50 @@ public class TodoDetailsInputFragment extends Fragment {
 	    	msg.show();
 			}
 		}
+		
+		//Todo list update
+				private class TaskAsyncUpdate extends AsyncTask<Void, Void, Task> {
+
+				@Override
+				protected Task doInBackground(Void... arg0) {
+					Log.i("TodoDetailsInputFragment", "TaskAsyncUpdate");
+				    Taskendpoint.Builder endpointBuilder = new Taskendpoint.Builder(
+				    AndroidHttp.newCompatibleTransport(), new JacksonFactory(), null)
+				    .setApplicationName("testandroid4");
+			   
+				    endpointBuilder = CloudEndpointUtils.updateBuilder(endpointBuilder);
+				    Taskendpoint endpoint = endpointBuilder.build();
+
+				    Task result;
+
+					      try {
+					    	  
+							    if(currenttask.getId() == null)
+							    {
+							    	currenttask.setId(System.currentTimeMillis());
+							    	Log.i("TodoDetailsInputFragment", "Insert Task");
+							    	result = endpoint.insertTask(currenttask).execute();
+							    }
+							    else {
+							    	Log.i("TodoDetailsInputFragment", "Update Task");
+							    	result = endpoint.updateTask(currenttask).execute();
+							    }
+							    
+						        
+						      } catch (IOException e) {
+						        // TODO Auto-generated catch block
+						        e.printStackTrace();
+						        result = null;
+						      }
+						      return result;		    	
+
+				}
+				
+			    @Override
+			    protected void onPostExecute(Task result) {
+			    	String displayString = "Task saved!";
+			    	Toast msg = Toast.makeText(getActivity().getBaseContext(), displayString,Toast.LENGTH_LONG);
+			    	msg.show();
+					}
+				}
 }
