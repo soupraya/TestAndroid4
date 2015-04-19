@@ -14,11 +14,7 @@
 	<classpathentry kind="src" path="endpoint-libs/libmessageEndpoint-v1/messageEndpoint/messageendpoint-v1-generated-source"/>
 	<classpathentry kind="src" path="endpoint-libs/libtaskendpoint-v1/taskendpoint/taskendpoint-v1-generated-source"/>
 	<classpathentry kind="src" path="endpoint-libs/libtodoendpoint-v1/todoendpoint/todoendpoint-v1-generated-source"/>
-	<classpathentry kind="src" path="TestAndroid4/endpoint-libs/libchargeableitemsendpoint-v1/chargeableitemsendpoint/chargeableitemsendpoint-v1-generated-source"/>
-	<classpathentry kind="src" path="TestAndroid4/endpoint-libs/libchargeableitemstotalendpoint-v1/chargeableitemstotalendpoint/chargeableitemstotalendpoint-v1-generated-source"/>
-	<classpathentry kind="src" path="TestAndroid4/endpoint-libs/libdeviceinfoendpoint-v1/deviceinfoendpoint/deviceinfoendpoint-v1-generated-source"/>
-	<classpathentry kind="src" path="TestAndroid4/endpoint-libs/libmessageEndpoint-v1/messageEndpoint/messageendpoint-v1-generated-source"/>
-	<classpathentry kind="src" path="TestAndroid4/endpoint-libs/libtaskendpoint-v1/taskendpoint/taskendpoint-v1-generated-source"/>
-	<classpathentry kind="src" path="TestAndroid4/endpoint-libs/libtodoendpoint-v1/todoendpoint/todoendpoint-v1-generated-source"/>
+	<classpathentry kind="src" path="endpoint-libs/libchargeableitemsendpoint-v1/chargeableitemsendpoint/chargeableitemsendpoint-v1-generated-source"/>
+	<classpathentry kind="src" path="endpoint-libs/libchargeableitemstotalendpoint-v1/chargeableitemstotalendpoint/chargeableitemstotalendpoint-v1-generated-source"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>

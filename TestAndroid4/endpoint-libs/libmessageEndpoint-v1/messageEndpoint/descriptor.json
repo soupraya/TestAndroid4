@@ -1,13 +1,13 @@
 {
   "files": [
     {
-      "downloadUrl": "/downloads/messageEndpoint/v1/20150410163144/java/1.18.0-rc/velan.com-messageEndpoint-v1-20150410163144-java-1.18.0-rc-sources.jar", 
-      "path": "velan.com-messageEndpoint-v1-20150410163144-java-1.18.0-rc-sources.jar", 
+      "downloadUrl": "/downloads/messageEndpoint/v1/20150411082906/java/1.18.0-rc/velan.com-messageEndpoint-v1-20150411082906-java-1.18.0-rc-sources.jar", 
+      "path": "velan.com-messageEndpoint-v1-20150411082906-java-1.18.0-rc-sources.jar", 
       "type": "source", 
-      "timestamp": "2015-04-10 16:31"
+      "timestamp": "2015-04-11 08:29"
     }, 
     {
-      "path": "velan.com-messageEndpoint-v1-20150410163144-java-1.18.0-rc.jar.properties", 
+      "path": "velan.com-messageEndpoint-v1-20150411082906-java-1.18.0-rc.jar.properties", 
       "type": "android.properties"
     }
   ], 
@@ -675,5 +675,5 @@
   "packagePath": "testandroid4", 
   "language_version": "1.18.0-rc", 
   "id": "messageEndpoint:v1", 
-  "revision": 20150410163144
+  "revision": 20150411082906
 }

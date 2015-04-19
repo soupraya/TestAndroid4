@@ -58,5 +58,11 @@
      
     <!-- Content Description -->
     <string name="desc_list_item_icon">Item Icon</string>
-
+    
+    <string name="new_chargeableitem">New</string>
+	<string name="chargeableitem_desc">Chargeable items Total: </string>
+	<string name="update_chargeableitem">Save</string>
+	
+	<string name="gross_margin_title">Gross Margin: </string>
+	
 </resources>

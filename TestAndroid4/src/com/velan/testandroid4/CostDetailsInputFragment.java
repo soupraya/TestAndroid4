@@ -109,8 +109,9 @@ public class CostDetailsInputFragment extends Fragment {
 		}
 		
 		public void CalculateCT() {
-			Double CT;
-			CT = currenttask.getCt()+currenttodo.getC();
+			Double CT=currenttodo.getC();
+			if(currenttask != null)
+				CT += currenttask.getCt();
 			currenttask.setCt(CT);
 		}
 		
@@ -161,7 +162,7 @@ public class CostDetailsInputFragment extends Fragment {
 		}
 		
 		//Todo list update
-				private class TaskAsyncUpdate extends AsyncTask<Void, Void, Task> {
+		private class TaskAsyncUpdate extends AsyncTask<Void, Void, Task> {
 
 				@Override
 				protected Task doInBackground(Void... arg0) {
