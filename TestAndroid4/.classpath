@@ -12,9 +12,9 @@
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
 	<classpathentry kind="src" path="endpoint-libs/libdeviceinfoendpoint-v1/deviceinfoendpoint/deviceinfoendpoint-v1-generated-source"/>
 	<classpathentry kind="src" path="endpoint-libs/libmessageEndpoint-v1/messageEndpoint/messageendpoint-v1-generated-source"/>
-	<classpathentry kind="src" path="endpoint-libs/libtaskendpoint-v1/taskendpoint/taskendpoint-v1-generated-source"/>
-	<classpathentry kind="src" path="endpoint-libs/libtodoendpoint-v1/todoendpoint/todoendpoint-v1-generated-source"/>
 	<classpathentry kind="src" path="endpoint-libs/libchargeableitemsendpoint-v1/chargeableitemsendpoint/chargeableitemsendpoint-v1-generated-source"/>
 	<classpathentry kind="src" path="endpoint-libs/libchargeableitemstotalendpoint-v1/chargeableitemstotalendpoint/chargeableitemstotalendpoint-v1-generated-source"/>
+	<classpathentry kind="src" path="endpoint-libs/libcostitemendpoint-v1/costitemendpoint/costitemendpoint-v1-generated-source"/>
+	<classpathentry kind="src" path="endpoint-libs/libcosttotalendpoint-v1/costtotalendpoint/costtotalendpoint-v1-generated-source"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>

@@ -1,13 +1,13 @@
 {
   "files": [
     {
-      "downloadUrl": "/downloads/deviceinfoendpoint/v1/20150411082851/java/1.18.0-rc/velan.com-deviceinfoendpoint-v1-20150411082851-java-1.18.0-rc-sources.jar", 
-      "path": "velan.com-deviceinfoendpoint-v1-20150411082851-java-1.18.0-rc-sources.jar", 
+      "downloadUrl": "/downloads/deviceinfoendpoint/v1/20150423162701/java/1.18.0-rc/velan.com-deviceinfoendpoint-v1-20150423162701-java-1.18.0-rc-sources.jar", 
+      "path": "velan.com-deviceinfoendpoint-v1-20150423162701-java-1.18.0-rc-sources.jar", 
       "type": "source", 
-      "timestamp": "2015-04-11 08:28"
+      "timestamp": "2015-04-23 16:27"
     }, 
     {
-      "path": "velan.com-deviceinfoendpoint-v1-20150411082851-java-1.18.0-rc.jar.properties", 
+      "path": "velan.com-deviceinfoendpoint-v1-20150423162701-java-1.18.0-rc.jar.properties", 
       "type": "android.properties"
     }
   ], 
@@ -675,5 +675,5 @@
   "packagePath": "testandroid4", 
   "language_version": "1.18.0-rc", 
   "id": "deviceinfoendpoint:v1", 
-  "revision": 20150411082851
+  "revision": 20150423162701
 }

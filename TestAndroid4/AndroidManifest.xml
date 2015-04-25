@@ -10,10 +10,10 @@
    <uses-permission android:name="android.permission.WAKE_LOCK"/>
    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
-   <application android:name="com.velan.testandroid4.PricingApplication"
+   <application android:name="com.velan.testandroid4.model.PricingApplication"
        android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
        
-        <activity android:label="@string/app_name" android:name=".MainActivity">
+        <activity android:label="@string/app_name" android:name="com.velan.testandroid4.ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
@@ -21,7 +21,7 @@
         </activity>
         
         <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
-        <service android:name=".GCMIntentService"/>
+        <service android:name="com.velan.testandroid4.model.GCMIntentService"/>
         <receiver android:name="com.google.android.gcm.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
             <intent-filter>
                 <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
@@ -32,9 +32,8 @@
                 <category android:name="com.velan.testandroid4"/>
             </intent-filter>
         </receiver>
-    
-        <activity android:launchMode="singleTop" android:name=".RegisterActivity"/>
-        <activity android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme" android:parentActivityName=".MainActivity" android:name=".NavigationDrawerActivity"/>
+ 
+        <activity android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme" android:parentActivityName=".MainActivity" android:name="com.velan.testandroid4.ui.NavigationDrawerActivity"/>
 </application>
 
 </manifest>

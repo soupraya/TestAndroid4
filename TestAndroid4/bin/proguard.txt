@@ -8,21 +8,18 @@
 # view res/layout/fragment_layout.xml #generated:13
 -keep class com.google.android.gms.common.SignInButton { <init>(...); }
 
-# view res/layout/activity_single_todo.xml #generated:6
--keep class com.velan.testandroid4.CostDetailsInputFragment { <init>(...); }
-
 # view AndroidManifest.xml #generated:24
--keep class com.velan.testandroid4.GCMIntentService { <init>(...); }
-
-# view AndroidManifest.xml #generated:16
--keep class com.velan.testandroid4.MainActivity { <init>(...); }
-
-# view AndroidManifest.xml #generated:37
--keep class com.velan.testandroid4.NavigationDrawerActivity { <init>(...); }
+-keep class com.velan.testandroid4.model.GCMIntentService { <init>(...); }
 
 # view AndroidManifest.xml #generated:13
--keep class com.velan.testandroid4.PricingApplication { <init>(...); }
+-keep class com.velan.testandroid4.model.PricingApplication { <init>(...); }
+
+# view res/layout/activity_single_todo.xml #generated:6
+-keep class com.velan.testandroid4.ui.CostDetailsInputFragment { <init>(...); }
+
+# view AndroidManifest.xml #generated:16
+-keep class com.velan.testandroid4.ui.MainActivity { <init>(...); }
 
 # view AndroidManifest.xml #generated:36
--keep class com.velan.testandroid4.RegisterActivity { <init>(...); }
+-keep class com.velan.testandroid4.ui.NavigationDrawerActivity { <init>(...); }
 
